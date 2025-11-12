@@ -7,38 +7,26 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
-    --color-red-400: oklch(70.4% 0.191 22.216);
     --color-red-500: oklch(63.7% 0.237 25.331);
     --color-red-600: oklch(57.7% 0.245 27.325);
-    --color-red-700: oklch(50.5% 0.213 27.518);
-    --color-amber-50: oklch(98.7% 0.022 95.277);
     --color-amber-100: oklch(96.2% 0.059 95.617);
     --color-amber-300: oklch(87.9% 0.169 91.605);
     --color-amber-400: oklch(82.8% 0.189 84.429);
     --color-amber-500: oklch(76.9% 0.188 70.08);
-    --color-amber-950: oklch(27.9% 0.077 45.635);
-    --color-yellow-400: oklch(85.2% 0.199 91.936);
     --color-green-500: oklch(72.3% 0.219 149.579);
-    --color-cyan-950: oklch(30.2% 0.056 229.695);
     --color-blue-500: oklch(62.3% 0.214 259.815);
     --color-gray-400: oklch(70.7% 0.022 261.325);
-    --color-zinc-400: oklch(70.5% 0.015 286.067);
-    --color-zinc-600: oklch(44.2% 0.017 285.786);
     --color-zinc-700: oklch(37% 0.013 285.805);
     --color-zinc-800: oklch(27.4% 0.006 286.033);
-    --color-neutral-400: oklch(70.8% 0 0);
     --color-black: #000;
     --color-white: #fff;
     --spacing: 0.25rem;
     --container-4xl: 56rem;
     --text-2xl: 1.5rem;
     --text-2xl--line-height: calc(2 / 1.5);
-    --text-3xl: 1.875rem;
-    --text-3xl--line-height: calc(2.25 / 1.875);
     --text-5xl: 3rem;
     --text-5xl--line-height: 1;
     --font-weight-bold: 700;
-    --font-weight-black: 900;
     --radius-lg: 0.5rem;
     --radius-2xl: 1rem;
     --default-font-family: var(--font-sans);
@@ -203,6 +191,9 @@
   .left-1 {
     left: calc(var(--spacing) * 1);
   }
+  .m-1 {
+    margin: calc(var(--spacing) * 1);
+  }
   .m-5 {
     margin: calc(var(--spacing) * 5);
   }
@@ -221,137 +212,32 @@
   .table {
     display: table;
   }
-  .h-1 {
-    height: calc(var(--spacing) * 1);
-  }
-  .h-10 {
-    height: calc(var(--spacing) * 10);
-  }
   .h-11 {
     height: calc(var(--spacing) * 11);
-  }
-  .h-12 {
-    height: calc(var(--spacing) * 12);
   }
   .h-15 {
     height: calc(var(--spacing) * 15);
   }
-  .h-19 {
-    height: calc(var(--spacing) * 19);
-  }
-  .h-\[0\%\] {
-    height: 0%;
-  }
-  .h-\[10\%\] {
-    height: 10%;
-  }
-  .h-\[10\] {
-    height: 10;
-  }
   .h-\[20\%\] {
     height: 20%;
-  }
-  .h-\[30\%\] {
-    height: 30%;
-  }
-  .h-\[40\%\] {
-    height: 40%;
-  }
-  .h-\[400\%\] {
-    height: 400%;
   }
   .h-screen {
     height: 100vh;
   }
-  .min-h-10 {
-    min-height: calc(var(--spacing) * 10);
-  }
-  .min-h-10\/12 {
-    min-height: calc(10/12 * 100%);
-  }
-  .w-1 {
-    width: calc(var(--spacing) * 1);
-  }
   .w-4xl {
     width: var(--container-4xl);
-  }
-  .w-5 {
-    width: calc(var(--spacing) * 5);
-  }
-  .w-12 {
-    width: calc(var(--spacing) * 12);
-  }
-  .w-15 {
-    width: calc(var(--spacing) * 15);
-  }
-  .w-16 {
-    width: calc(var(--spacing) * 16);
-  }
-  .w-22 {
-    width: calc(var(--spacing) * 22);
-  }
-  .w-23 {
-    width: calc(var(--spacing) * 23);
-  }
-  .w-40 {
-    width: calc(var(--spacing) * 40);
-  }
-  .w-\[\%\] {
-    width: %;
-  }
-  .w-\[0\%\] {
-    width: 0%;
-  }
-  .w-\[2\%\] {
-    width: 2%;
   }
   .w-\[10\%\] {
     width: 10%;
   }
-  .w-\[14\%\] {
-    width: 14%;
-  }
   .w-\[15\%\] {
     width: 15%;
-  }
-  .w-\[17\%\%\] {
-    width: 17%%;
-  }
-  .w-\[17\%\\\%\] {
-    width: 17%\%;
-  }
-  .w-\[17\%\] {
-    width: 17%;
-  }
-  .w-\[20\%\] {
-    width: 20%;
-  }
-  .w-\[25\%\] {
-    width: 25%;
-  }
-  .w-\[27\%\] {
-    width: 27%;
-  }
-  .w-\[30\%\%\] {
-    width: 30%%;
-  }
-  .w-\[30\%\] {
-    width: 30%;
   }
   .w-\[40\%\] {
     width: 40%;
   }
-  .w-\[50\%\] {
-    width: 50%;
-  }
   .w-\[80\%\] {
     width: 80%;
-  }
-  .w-\[90\%\] {
-    width: 90%;
-  }
-  .w-\[100\%\] {
-    width: 100%;
   }
   .w-full {
     width: 100%;
@@ -370,9 +256,6 @@
   }
   .items-center {
     align-items: center;
-  }
-  .justify-around {
-    justify-content: space-around;
   }
   .justify-between {
     justify-content: space-between;
@@ -437,6 +320,9 @@
   .bg-gray-400 {
     background-color: var(--color-gray-400);
   }
+  .bg-green-500 {
+    background-color: var(--color-green-500);
+  }
   .bg-red-600 {
     background-color: var(--color-red-600);
   }
@@ -455,31 +341,15 @@
   .p-2\.5 {
     padding: calc(var(--spacing) * 2.5);
   }
-  .p-3 {
-    padding: calc(var(--spacing) * 3);
-  }
   .p-5 {
     padding: calc(var(--spacing) * 5);
-  }
-  .text-2xl {
-    font-size: var(--text-2xl);
-    line-height: var(--tw-leading, var(--text-2xl--line-height));
   }
   .text-5xl {
     font-size: var(--text-5xl);
     line-height: var(--tw-leading, var(--text-5xl--line-height));
   }
-  .text-\[10px\] {
-    font-size: 10px;
-  }
-  .text-\[12px\] {
-    font-size: 12px;
-  }
   .text-\[14px\] {
     font-size: 14px;
-  }
-  .text-\[15px\] {
-    font-size: 15px;
   }
   .text-\[16px\] {
     font-size: 16px;
@@ -487,16 +357,9 @@
   .text-\[17px\] {
     font-size: 17px;
   }
-  .leading-1 {
-    --tw-leading: calc(var(--spacing) * 1);
-    line-height: calc(var(--spacing) * 1);
-  }
   .font-bold {
     --tw-font-weight: var(--font-weight-bold);
     font-weight: var(--font-weight-bold);
-  }
-  .text-\[10pz\] {
-    color: 10pz;
   }
   .text-amber-100 {
     color: var(--color-amber-100);
@@ -545,23 +408,11 @@
       }
     }
   }
-  .in-hover\:border-2 {
-    :where(*:hover) & {
-      @media (hover: hover) {
-        border-style: var(--tw-border-style);
-        border-width: 2px;
-      }
-    }
-  }
 }
 @property --tw-border-style {
   syntax: "*";
   inherits: false;
   initial-value: solid;
-}
-@property --tw-leading {
-  syntax: "*";
-  inherits: false;
 }
 @property --tw-font-weight {
   syntax: "*";
@@ -576,7 +427,6 @@
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
       --tw-border-style: solid;
-      --tw-leading: initial;
       --tw-font-weight: initial;
       --tw-outline-style: solid;
     }
